@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BOOTSTRAP 4-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Barra de navegacion interna en la pagina -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ url_for('home') }}">Post Venta Main</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Busqueda Cliente</li>
+            </ol>
+        </nav>
+
+        <div class="row justify-content-md-start ">
+            <div class="col align-sel-centr col-lg-2"> Nombre </div>
+            <input name="nombre_cliente" type="text" placeholder="ingresar nombre">
+            <div class="col-md-auto">  </div>
+
+        </div>
+
+        <div class="row justify-content-md-start ">
+            <div class="col align-sel-centr col-lg-2"> Rut </div>
+            <input name="rut_cliente" type="text" placeholder="ingresar rut">
+            <div class="col-md-auto">  </div>
+
+        </div>
+
+        <div class="row justify-content-md-start ">
+            <div class="col align-sel-centr col-lg-2"> Direccion </div>
+            <div class="col-md-auto">  </div>
+
+        </div>
+
+        <div class="row justify-content-md-start">
+            <div class="col align-sel-centr col-lg-2"> Correo </div>
+            <div class="col-md-auto">  </div>
+
+        </div>
+
+        <div class="row justify-content-md-start">
+            <div class="col align-sel-centr col-lg-2"> Telefono </div>
+            <div class="col-md-auto">  </div>
+
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col align-sel-centr col-lg-2"> Articulos comprados </div>
+            <div class="col-md-auto">  </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

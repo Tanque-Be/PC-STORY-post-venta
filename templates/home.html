@@ -1,0 +1,47 @@
+{%extends "layout.html" %} {%block content %}
+<div class="container">
+  <!--Tarjeta Buscar cliente Inscrito-->
+  <div class="card">
+    <img src="static/images/cliente.jpg" />
+    <h4>Busqueda de Cliente</h4>
+    <p>Buscar cliente inscrito en sistema</p>
+    <a href="{{ url_for('b_cliente') }}">Leer más</a>
+  </div>
+
+  <div class="card">
+    <img src="static/images/boleta.jpg" />
+    <h4>Busqueda de Boleta</h4>
+    <p>Buscar Boleta inscrito en sistema</p>
+    <a href="{{ url_for('b_boleta') }}">Leer más</a>
+  </div>
+
+  <div class="card" align="center">
+    <img src="static/images/seguimiento_ticket.png" />
+    <h4>Seguimiento Ticket</h4>
+    <p>Buscar cliente inscrito en sistema</p>
+    <a href="{{ url_for('ticket') }}">Leer más</a>
+  </div>
+
+  <div class="card">
+    <img src="static/images/devolucion.jpg" />
+    <h4>Ingreso Cambio - Devolucion</h4>
+    <p>Buscar cliente inscrito en sistema</p>
+    <a href="{{ url_for('fallo') }}">Leer más</a>
+  </div>
+
+  <div class="card">
+    <img src="static/images/informe_tecnico.jpg" />
+    <h4>Informes Post Venta</h4>
+    <p>Informe devolucion - estado en sistema</p>
+    <a href="{{ url_for('informes') }}">Leer más</a>
+  </div>
+
+  <div class="card">
+    <img src="static/images/sugerencias.jpg" />
+    <h4>Sugerencia y Reclamos</h4>
+    <p>Buscar cliente inscrito en sistema</p>
+    <a href="{{ url_for('sug_rec') }}">Leer más</a>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BOOTSTRAP 4-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Barra de navegacion interna en la pagina -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ url_for('home') }}">Post Venta Main</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Busqueda Boleta</li>
+            </ol>
+        </nav>
+
+        <!--Ingreso de dato para busqueda de cliente -->
+        <form >
+            
+            <div class="form-group justify-content-between">
+                
+            <label for="text">Busqueda Cliente </label>
+
+            <input name="rut_cliente" type="text" placeholder="ingresar rut">
+            
+            <button type="submit" class="btn btn-primary">Buscar</button>
+
+            </div>
+            
+            
+            </form>
+
+        <!--Tabla informacion busqueda de cliente -->
+        <table class="table table-responsive">
+            <tr>
+
+                <td>Numero de Boleta</td>
+
+                <td>Fecha de Compra</td>
+
+                <td>Monto Compra</td>
+
+                <td>Lugar Compra</td>
+
+                <td>Metodo Pago</td>
+
+                <td>Forma de Entrega</td>
+
+            </tr>
+
+            <tr>
+
+                <td> </td>
+
+                <td> </td>
+
+                <td> </td>
+
+                <td> </td>
+
+                <td> </td>
+
+                <td> </td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
